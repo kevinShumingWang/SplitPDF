@@ -115,7 +115,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SplitPDF";
+            this.Text = "SplitLabel ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
