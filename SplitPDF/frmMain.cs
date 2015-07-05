@@ -109,9 +109,6 @@ namespace SplitPDF
             btnRun.Enabled = true;
         }
 
-        private void btnOpenFolder_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Coming soon");
-        }
+       
     }
 }
