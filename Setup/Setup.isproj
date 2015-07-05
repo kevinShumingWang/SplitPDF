@@ -28,10 +28,5 @@
 		</TaggedOutputs> -->
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2013Limited\InstallShield.targets"/>
-	<ItemGroup>
-		<ProjectReference Include="..\SplitPDF\SplitPDF.csproj">
-			<Name>SplitPDF</Name>
-			<Project>{BBF5C2E3-F01C-4B70-8B8C-07BC153136BA}</Project>
-		</ProjectReference>
-	</ItemGroup>
+	<ItemGroup/>
 </Project>

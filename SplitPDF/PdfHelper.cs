@@ -9,6 +9,7 @@ namespace SplitPDF
 {
     public class PdfHelper
     {
+        public static SizeF SizeF4x6 { get { return new SizeF(288, 432); } }
         public List<Image> GetImages(string filePath)
         {
             PdfDocument doc = new PdfDocument();

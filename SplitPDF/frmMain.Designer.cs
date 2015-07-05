@@ -32,10 +32,13 @@
             this.ofdSingleFile = new System.Windows.Forms.OpenFileDialog();
             this.btnOpenFile = new System.Windows.Forms.Button();
             this.txtFilePath = new System.Windows.Forms.TextBox();
-            this.btnOpenFolder = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRun = new System.Windows.Forms.Button();
             this.lblMsg = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtText = new System.Windows.Forms.TextBox();
+            this.pbSplitProgress = new System.Windows.Forms.ProgressBar();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ofdSingleFile
@@ -61,32 +64,24 @@
             this.txtFilePath.Size = new System.Drawing.Size(408, 20);
             this.txtFilePath.TabIndex = 2;
             // 
-            // btnOpenFolder
-            // 
-            this.btnOpenFolder.Location = new System.Drawing.Point(570, 31);
-            this.btnOpenFolder.Name = "btnOpenFolder";
-            this.btnOpenFolder.Size = new System.Drawing.Size(75, 23);
-            this.btnOpenFolder.TabIndex = 3;
-            this.btnOpenFolder.Text = "Open Folder";
-            this.btnOpenFolder.UseVisualStyleBackColor = true;
-            this.btnOpenFolder.Click += new System.EventHandler(this.btnOpenFolder_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(25, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "File：";
+            this.label1.Text = "File:";
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(277, 96);
+            this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnRun.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnRun.Location = new System.Drawing.Point(240, 133);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(75, 23);
+            this.btnRun.Size = new System.Drawing.Size(75, 30);
             this.btnRun.TabIndex = 10;
-            this.btnRun.Text = "Run Demo";
+            this.btnRun.Text = "Split";
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             // 
@@ -94,20 +89,55 @@
             // 
             this.lblMsg.AutoSize = true;
             this.lblMsg.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblMsg.Location = new System.Drawing.Point(74, 72);
+            this.lblMsg.Location = new System.Drawing.Point(58, 109);
             this.lblMsg.Name = "lblMsg";
             this.lblMsg.Size = new System.Drawing.Size(0, 13);
             this.lblMsg.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(20, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Text:";
+            // 
+            // txtText
+            // 
+            this.txtText.Location = new System.Drawing.Point(61, 72);
+            this.txtText.Name = "txtText";
+            this.txtText.Size = new System.Drawing.Size(110, 20);
+            this.txtText.TabIndex = 13;
+            // 
+            // pbSplitProgress
+            // 
+            this.pbSplitProgress.Location = new System.Drawing.Point(240, 72);
+            this.pbSplitProgress.Name = "pbSplitProgress";
+            this.pbSplitProgress.Size = new System.Drawing.Size(321, 23);
+            this.pbSplitProgress.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(186, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Progress:";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 164);
+            this.ClientSize = new System.Drawing.Size(592, 194);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pbSplitProgress);
+            this.Controls.Add(this.txtText);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnOpenFolder);
             this.Controls.Add(this.txtFilePath);
             this.Controls.Add(this.btnOpenFile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -115,7 +145,7 @@
             this.MaximizeBox = false;
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SplitLabel ";
+            this.Text = "Split Label ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,10 +156,13 @@
         private System.Windows.Forms.OpenFileDialog ofdSingleFile;
         private System.Windows.Forms.Button btnOpenFile;
         private System.Windows.Forms.TextBox txtFilePath;
-        private System.Windows.Forms.Button btnOpenFolder;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Label lblMsg;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtText;
+        private System.Windows.Forms.ProgressBar pbSplitProgress;
+        private System.Windows.Forms.Label label3;
     }
 }
 
